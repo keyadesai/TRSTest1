@@ -1,0 +1,41 @@
+<ion-view view-title="Pods">
+  <ion-content scroll="true">
+
+  <ion-slide-box active-slide="myActiveSlide">
+  <ion-slide ng-repeat="product in products">
+   
+   <div class="list card" style="text-align: center">
+
+  <div class="item item-avatar" style="font-size:30px;padding-left:0px">
+    <h2>{{product.name}}</h2>
+    <p>{{product.price}}</p>
+    <ionic-ratings ratingsobj="ratingsObject" style="font-size:40px"></ionic-ratings>
+    <p style="    background-color: yellow;
+    padding: 3px 6px;
+    display: inline;
+    font-weight: bold;">Rate me</p>
+  </div>
+
+  <div class="item item-body" style="border-top:none">
+    <img class="full-image product-full-img" style="text-align:center" src={{product.image}}>
+
+      <blockquote>{{product.quote}}<div><p><time datetime="2009-11-13T20:00">{{product.reviewer}}</time> </p></div></blockquote>
+    <hr style="border-color:#ccc;border-style:solid"/>
+    <span style="text-align: left">
+    <h2 >Why the low prices?</h2>
+    <p>
+     The Reject Shop is able to offer these big brands at low prices because we source them from overseas.
+    </p>
+    <ul style="list-style-type:disc;margin-left:20px;">
+    	<li>All products pass <strong>Australian quality standards</strong></li>
+    	<li>All products are <strong>genuine branded products</strong></li>
+    	<li>All products are supported by The Reject Shop’s <strong>normal returns policy</strong></li>
+    </ul>
+    </span>
+
+</div>
+  </ion-slide>
+</ion-slide-box>
+
+  </ion-content>
+</ion-view>

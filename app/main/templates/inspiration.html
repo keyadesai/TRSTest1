@@ -1,0 +1,19 @@
+<ion-view view-title="{{inspiration.name}}">
+  <!-- do you want padding? -->
+  <ion-content class="padding">
+
+    <!-- content goes here -->
+   <ion-list>
+      <ion-item
+        ng-repeat="product in inspiration.products"
+        class="item-remove-animate item-thumbnail-left"
+        type="item-text-wrap">
+        <img src="{{product.image}}" />
+        <h2>{{product.name}}</h2>
+        <h2>{{product.price}}</h2>
+        <img src="main/assets/images/{{product.rating}}.png" style="height:16px;margin-top:5px"/>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

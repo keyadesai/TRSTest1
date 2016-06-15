@@ -1,0 +1,60 @@
+<ion-view view-title="Featured Products">
+  <ion-content>
+    <!-- content goes here -->
+    <ion-list>
+    <ion-item
+        class="item-remove-animate"
+        type="item-text-wrap">
+        <img src="main/assets/images/banner3.png" style="width:100%;height:auto;max-width:400px"/>
+      </ion-item>
+      <ion-item
+        ng-repeat="product in products1"
+        class="item-remove-animate item-thumbnail-left item-icon-right"
+        type="item-text-wrap"
+        href="#/main/list/detail/{{product.id }}">
+        <img src="{{product.image}}" />
+        <h3>{{product.name}}</h3>
+        <h2>{{product.price}}</h2>
+         <!-- <ionic-ratings ratingsobj='ratingsObject' style="font-size:40px"></ionic-ratings> -->
+        <img src="main/assets/images/heart-{{product.rating}}.png" style="height:16px;margin-top:5px"/>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <ion-item
+        class="item-remove-animate"
+        type="item-text-wrap">
+        <img src="main/assets/images/banner1.png" style="width:100%;height:auto;max-width:400px"/>
+      </ion-item>
+      <ion-item
+        ng-repeat="product in products2"
+        class="item-remove-animate item-thumbnail-left item-icon-right"
+        type="item-text-wrap"
+        href="#/main/list/detail/{{product.id }}">
+        <img src="{{product.image}}" />
+        <h3>{{product.name}}</h3>
+        <h2>{{product.price}}</h2>
+         <!-- <ionic-ratings ratingsobj='ratingsObject' style="font-size:40px"></ionic-ratings> -->
+        <img src="main/assets/images/heart-{{product.rating}}.png" style="height:16px;margin-top:5px"/>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+       <ion-item
+        class="item-remove-animate"
+        type="item-text-wrap">
+        <img src="main/assets/images/banner2.png" style="width:100%;height:auto;max-width:400px"/>
+      </ion-item>
+       <ion-item
+        ng-repeat="product in products3"
+        class="item-remove-animate item-thumbnail-left item-icon-right"
+        type="item-text-wrap"
+        href="#/main/list/detail/{{product.id }}">
+        <img src="{{product.image}}" />
+        <h3>{{product.name}}</h3>
+        <h2>{{product.price}}</h2>
+         <!-- <ionic-ratings ratingsobj='ratingsObject' style="font-size:40px"></ionic-ratings> -->
+        <img src="main/assets/images/heart-{{product.rating}}.png" style="height:16px;margin-top:5px"/>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+</div>
+
+  </ion-content>
+</ion-view>

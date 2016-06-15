@@ -1,0 +1,131 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+*/
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #4a87ee !default;
+$calm:                            #43cee6 !default;
+$balanced:                        #66cc33 !default;
+$energized:                       #f0b840 !default;
+$assertive:                       #BF0D0D !default;
+$royal:                           #8a6de9 !default;
+$dark:                            #444 !default;
+
+// The path for our ionicons font files, relative to the built & temporary main.css
+$ionicons-font-path: "../assets/fonts" !default;
+
+
+
+// Include all of Ionic
+@import "../../bower_components/ionic/scss/ionic";
+
+.bar.bar-assertive{
+    border-bottom: 2px solid #F5D402 !important;
+}
+
+.ionic_ratings .icon {
+	margin-right:5px;
+}
+
+.tab-nav {
+  border-top: 2px solid #F5D402 !important;
+}
+
+.rating {
+	.icon {
+	right: auto;
+    left: auto;
+    top: 10px;
+	}
+}
+
+ .bar.bar-assertive .title {
+     color: #F5D402;
+ }
+
+ .tabs-assertive > .tabs, .tabs.tabs-assertive {
+   color:#F5D402;
+}
+
+.product-full-img {
+	margin:0 auto;
+      max-width: 244px !important;
+      max-height: 244px !important;
+}
+
+.item h2 {
+font-size:20px;
+white-space:pre-wrap;
+}
+
+.item h3 {
+	white-space:pre-wrap;
+}
+
+.inspiration-item .item-content {
+	padding-right: 16px;
+}
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid #F5D402;
+  border-right: 2px solid #F5D402;
+  
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #F5D402;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}

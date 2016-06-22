@@ -1,7 +1,7 @@
-<ion-view view-title="Pods">
+<ion-view view-title="">
   <ion-content scroll="true">
 
-  <ion-slide-box active-slide="myActiveSlide">
+  <ion-slide-box active-slide="myActiveSlide" on-slide-changed="slideChanged(index)">
   <ion-slide ng-repeat="product in products">
    
    <div class="list card" style="text-align: center">

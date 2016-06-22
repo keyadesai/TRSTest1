@@ -5,12 +5,11 @@ angular.module('main', [
   'ui.router',
   'ionic-ratings',
   'ngLodash'
-  // TODO: load other modules selected during generation
 ])
 .config(function ($stateProvider, $urlRouterProvider) {
 
   // ROUTING with ui.router
-  $urlRouterProvider.otherwise('/main/list');
+  $urlRouterProvider.otherwise('/main/product-list');
   $stateProvider
     // this state is placed in the <ion-nav-view> in the index.html
     .state('main', {
@@ -19,25 +18,25 @@ angular.module('main', [
       templateUrl: 'main/templates/tabs.html'
     })
       .state('main.list', {
-        url: '/list',
+        url: '/product-list',
         views: {
           'tab-list': {
-            templateUrl: 'main/templates/list.html',
+            templateUrl: 'main/templates/product-list.html',
             controller: 'ListsCtrl as ctrl'
           }
         }
       })
       .state('main.listDetail', {
-        url: '/list/detail/:id',
+        url: '/product-detail/:id',
         views: {
           'tab-list': {
-            templateUrl: 'main/templates/list-detail.html',
+            templateUrl: 'main/templates/product-detail.html',
             controller: 'ListCtrl as ctrl'
           }
         }
       })
       .state('main.inspirationList', {
-        url: '/inspirationList',
+        url: '/inspiration-list',
         views: {
           'tab-inspirationList': {
             templateUrl: 'main/templates/inspiration-list.html',
@@ -46,20 +45,11 @@ angular.module('main', [
         }
       })
       .state('main.inspirationListDetail', {
-        url: '/inspirationList/detail/:id',
+        url: '/inspiration-detail/:id',
         views: {
           'tab-inspirationList': {
-            templateUrl: 'main/templates/inspiration.html',
+            templateUrl: 'main/templates/inspiration-detail.html',
             controller: 'InspirationCtrl as ctrl'
-          }
-        }
-      })
-      .state('main.debug', {
-        url: '/debug',
-        views: {
-          'tab-debug': {
-            templateUrl: 'main/templates/debug.html',
-            controller: 'DebugCtrl as ctrl'
           }
         }
       });

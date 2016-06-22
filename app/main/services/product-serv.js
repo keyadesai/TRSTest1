@@ -61,25 +61,25 @@ angular.module('main')
 
 this.laundryProducts = [{
     id: 1,
-    name: 'Mars Pods 176g',
+    name: 'Laundry Storage Boxes',
     image: 'main/assets/images/laundry-1.jpg',
-    price: '$2.00',
+    price: '$5.00',
     rating: 3,
     quote: 'Delicious treats!! Hard to stop at just a few.',
     reviewer: 'Timothy • 12 June 2016'
   },
   {
     id: 2,
-    name: 'Cadbury Dairy Milk Biscuits 110g',
+    name: 'Bathroom Storage Boxes',
     image: 'main/assets/images/laundry-2.jpg',
-    price: '$2.00',
+    price: '$5.00',
     rating: 4,
     quote: 'These taste just like I get from supermarkets',
     reviewer: 'Keya • 9 June 2016'
   },
   {
     id: 3,
-    name: 'Pringles Xtra 140g',
+    name: 'Soft Grip Pegs',
     image: 'main/assets/images/laundry-3.jpg',
     price: '$2.00',
     rating: 5,
@@ -88,15 +88,15 @@ this.laundryProducts = [{
   },
   {
     id: 4,
-    name: 'Schmackos Chomp N Chew 180g 3pk',
+    name: 'Felt Bag',
     image: 'main/assets/images/laundry-4.jpg',
-    price: '$5.00',
+    price: '$10.00',
     rating: 3,
     quote: 'I save heaps compared to supermarkets. My dog loves them',
     reviewer: 'Amanda • 11 June 2016'
   },
   {
-    id: 3,
+    id: 5,
     name: 'Monaco Lint Brush',
     image: 'main/assets/images/laundry-5.jpg',
     price: '$2.00',
@@ -105,7 +105,7 @@ this.laundryProducts = [{
     reviewer: 'Dan • 3 June 2016'
   },
   {
-    id: 3,
+    id: 6,
     name: 'Radiant Color Guard',
     image: 'main/assets/images/laundry-6.jpg',
     price: '$2.00',
@@ -114,8 +114,8 @@ this.laundryProducts = [{
     reviewer: 'Dan • 3 June 2016'
   },
   {
-    id: 3,
-    name: 'Pringles Xtra 140g',
+    id: 7,
+    name: 'Lint roller',
     image: 'main/assets/images/laundry-7.jpg',
     price: '$2.00',
     rating: 5,
@@ -153,7 +153,7 @@ this.bathroomProducts = [{
   },
   {
     id: 4,
-    name: 'Schmackos Chomp N Chew 180g 3pk',
+    name: 'Bathroom soap despenser',
     image: 'main/assets/images/bathroom-4.jpg',
     price: '$5.00',
     rating: 3,
@@ -161,8 +161,8 @@ this.bathroomProducts = [{
     reviewer: 'Amanda • 11 June 2016'
   },
   {
-    id: 2,
-    name: 'Cadbury Dairy Milk Biscuits 110g',
+    id: 5,
+    name: 'Toilet Brush',
     image: 'main/assets/images/bathroom-5.jpg',
     price: '$2.00',
     rating: 4,
@@ -170,8 +170,8 @@ this.bathroomProducts = [{
     reviewer: 'Keya • 9 June 2016'
   },
   {
-    id: 3,
-    name: 'Pringles Xtra 140g',
+    id: 6,
+    name: 'Felt Bucket',
     image: 'main/assets/images/bathroom-6.jpg',
     price: '$2.00',
     rating: 5,
@@ -179,8 +179,8 @@ this.bathroomProducts = [{
     reviewer: 'Dan • 3 June 2016'
   },
   {
-    id: 4,
-    name: 'Schmackos Chomp N Chew 180g 3pk',
+    id: 7,
+    name: 'Felt Bucket',
     image: 'main/assets/images/bathroom-7.jpg',
     price: '$5.00',
     rating: 3,
@@ -188,7 +188,7 @@ this.bathroomProducts = [{
     reviewer: 'Amanda • 11 June 2016'
   },
   {
-    id: 2,
+    id: 8,
     name: 'Colgate Cavity Protection 175g',
     image: 'main/assets/images/bathroom-8.jpg',
     price: '$2.00',
@@ -197,7 +197,7 @@ this.bathroomProducts = [{
     reviewer: 'Keya • 9 June 2016'
   },
   {
-    id: 3,
+    id: 9,
     name: 'Dove Beauty Cream Bar',
     image: 'main/assets/images/bathroom-9.jpg',
     price: '$2.00',
@@ -206,7 +206,7 @@ this.bathroomProducts = [{
     reviewer: 'Dan • 3 June 2016'
   },
   {
-    id: 4,
+    id: 10,
     name: 'Rexona Women Free Spirit',
     image: 'main/assets/images/bathroom-10.jpg',
     price: '$5.00',
@@ -223,20 +223,24 @@ this.bathroomProducts = [{
 this.inspirations = [{
   id: 1,
   name: 'Lovely Laundry List',
-  products: this.laundryProducts
+  products: this.laundryProducts,
+  bloggerName: 'Natalie from PartyMoms',
+  date: 'June 05, 2016',
+  title: 'Bathroom Bliss',
+  image: 'main/assets/images/bathroom-bliss.jpg',
+  avatar: 'main/assets/images/43.jpg',
+  description: 'I love the Reject Shops new bathroom range - its been a lot of fun putting this inspiration moodboard together - hope you like it!'
 },
 {
   id: 1,
   name: 'Bathroom Bliss',
-  products: this.bathroomProducts
+  products: this.bathroomProducts,
+  bloggerName: 'Emily from PartyMoms',
+  date: 'June 05, 2016',
+  title: 'Get a Lovely Laundry',
+  image: 'main/assets/images/laundry.jpg',
+  avatar: 'main/assets/images/emily.png',
+  description: 'I love the Reject Shops new laundry range - its been a lot of fun putting this inspiration moodboard together - hope you like it!'
 }
 ];
-
-
-
-
-
-
-  $log.log('Hello from your Service: Product in module main');
-
 });

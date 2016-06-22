@@ -3,7 +3,7 @@
   <ion-content class="padding">
 
     <!-- content goes here -->
-    <ion-list>
+    <ion-list ng-repeat="inspiration in inspirations">
      <ion-item
         class="item-remove-animate"
         type="item-text-wrap">
@@ -13,45 +13,21 @@
     <ion-item
         class="item-remove-animate inspiration-item"
         type="item-text-wrap"
-        href="#/main/inspirationList/detail/2">
+        href="#/main/inspiration-detail/2">
         <div class="list card">
 
   <div class="item item-avatar item-icon-right">
-    <img src="main/assets/images/emily.png">
-    <h2>Emily from PartyMoms</h2>
-    <p>June 05, 2016</p>
+    <img src="{{inspiration.avatar}}">
+    <h2>{{inspiration.bloggerName}}</h2>
+    <p>{{inspiration.date}}</p>
      <i class="icon ion-ios-arrow-right" style="color:#ccc"></i>
   </div>
 
   <div class="item item-body">
-    <img class="full-image" src="main/assets/images/bathroom-bliss.jpg">
-    <h2>Bathroom Bliss</h2>
+    <img class="full-image" src="{{inspiration.image}}">
+    <h2>{{inspiration.title}}</h2>
     <p>
-      "I love the Reject Shop's new laundry range - its been a lot of fun putting this inspiration moodboard together - hope you like it!"
-    </p>
-  </div>
-
-</div>
-      </ion-item>
-
-       <ion-item 
-        class="item-remove-animate inspiration-item"
-        type="item-text-wrap"
-        href="#/main/inspirationList/detail/1">
-        <div class="list card">
-
-  <div class="item item-avatar item-icon-right">
-    <img src="main/assets/images/emily.png" />
-    <h2>Emily from PartyMoms</h2>
-    <p>June 05, 2016</p>
-    <i class="icon ion-ios-arrow-right" style="color:#ccc"></i>
-  </div>
-
-  <div class="item item-body">
-    <img class="full-image" src="main/assets/images/laundry.jpg">
-    <h2>Get a Lovely Laundry</h2>
-    <p>
-      "I love the Reject Shop's new laundry range - its been a lot of fun putting this inspiration moodboard together - hope you like it!"
+      {{inspiration.description}}
     </p>
   </div>
 

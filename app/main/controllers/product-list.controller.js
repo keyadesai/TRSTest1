@@ -4,12 +4,10 @@ angular.module('main')
  
  $scope.products1 = _.slice(Product.products, 0, 2);
 
-
  $scope.products2 = _.slice(Product.products, 2, 4);
 
  $scope.products3 = _.slice(Product.products, 4, Product.products.length);
-
-
+  
   $scope.ratingsObject = {
     iconOn: 'ion-ios-heart',
     iconOff: 'ion-ios-heart-outline',
@@ -24,7 +22,4 @@ angular.module('main')
   $scope.ratingsCallback = function (rating) {
     console.log('Selected rating is : ', rating);
   };
-
-  $log.log('Hello from your Controller: ListsCtrl in module main:. This is your controller:', this);
-
 });
